@@ -14,7 +14,7 @@ function Navbar() {
             </li>
             <li>
               <Link to="/store" className="text-gray-700 hover:text-blue-500">
-                About
+                Store
               </Link>
             </li>
             <li>
