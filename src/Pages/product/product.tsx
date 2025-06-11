@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import Container from "../../Components/container/Container";
+import Button from "../../Components/button/Button";
 
 function Product() {
   const params = useParams<{ id: string }>();
@@ -13,24 +14,31 @@ function Product() {
               src="https://cashflowinventory.com/blog/wp-content/uploads/2023/09/Product-Assortment-1024x1024.jpg"
               alt=""
             />
-            <button className="bg-blue-500 text-white px-4 py-2 rounded mt-4 w-full">
-                Add to Cart
-            </button>
-            <button className="bg-green-500 text-white px-4 py-2 rounded mt-2 w-full">
-                Buy Now
-            </button>
+            <Button variant="primary">Add To Cart</Button>
+            <Button variant="danger">Buy Now</Button>
           </div>
           <div className="col-span-9 p-4">
             <h1 className="text-2xl font-bold">Product Name {params.id}</h1>
             <div>
-                <p>
-                    price: <span className="text-red-500 font-bold">$100</span>
-                </p>
-                <p>
-                    Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quidem officiis impedit suscipit in distinctio enim dolorum nulla cupiditate similique, harum illum iure ipsam, consectetur tenetur, eveniet quo. Fugiat qui, harum adipisci deleniti vel atque modi quos numquam! Ab numquam reiciendis et? Esse exercitationem eaque repudiandae est quas saepe cumque nemo dignissimos facere dolorum iure, accusamus nesciunt aut minus maxime at vel repellendus reiciendis laborum unde assumenda provident vitae. Consequuntur enim dolores hic, exercitationem odit laborum illo adipisci odio voluptatibus, praesentium quidem ut suscipit sunt mollitia natus ipsam iste. Aperiam accusamus vero necessitatibus in mollitia reprehenderit voluptates cumque molestiae ea.
-                </p>
+              <p>
+                price: <span className="text-red-500 font-bold">$100</span>
+              </p>
+              <p>
+                Description: Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Vero quidem officiis impedit suscipit in distinctio enim
+                dolorum nulla cupiditate similique, harum illum iure ipsam,
+                consectetur tenetur, eveniet quo. Fugiat qui, harum adipisci
+                deleniti vel atque modi quos numquam! Ab numquam reiciendis et?
+                Esse exercitationem eaque repudiandae est quas saepe cumque nemo
+                dignissimos facere dolorum iure, accusamus nesciunt aut minus
+                maxime at vel repellendus reiciendis laborum unde assumenda
+                provident vitae. Consequuntur enim dolores hic, exercitationem
+                odit laborum illo adipisci odio voluptatibus, praesentium quidem
+                ut suscipit sunt mollitia natus ipsam iste. Aperiam accusamus
+                vero necessitatibus in mollitia reprehenderit voluptates cumque
+                molestiae ea.
+              </p>
             </div>
-
           </div>
         </div>
       </Container>
