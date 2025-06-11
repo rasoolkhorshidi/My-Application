@@ -18,8 +18,8 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="/buy" className="text-gray-700 hover:text-blue-500">
-                Buy
+              <Link to="/cart" className="text-gray-700 hover:text-blue-500">
+                Cart
               </Link>
             </li>
           </ul>

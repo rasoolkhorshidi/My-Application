@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+body {
+  @apply bg-gray-100 text-gray-900;
+  @apply font-sans leading-normal tracking-normal;
+  @apply antialiased;
+  @apply min-h-screen;
+  @apply flex flex-col;
+  @apply overflow-x-hidden;
+  @apply text-sm;
+  max-width: 1000px;
+  margin: 0 auto;
+}
