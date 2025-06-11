@@ -21,7 +21,12 @@ function Product() {
             <h1 className="text-2xl font-bold">Product Name {params.id}</h1>
             <div>
               <p>
-                price: <span className="text-red-500 font-bold">$100</span>
+                price:{" "}
+                <span className="text-gray-500 line-through mr-2">$100</span>
+                <span className="text-red-500 font-bold">$80</span>
+                <span className="ml-2 text-green-600 font-semibold bg-green-100 px-2 py-1 rounded text-xs">
+                  20% OFF
+                </span>
               </p>
               <p>
                 Description: Lorem ipsum dolor sit amet consectetur adipisicing

@@ -14,7 +14,14 @@ function CartItem({ ...rest }: TCartItem) {
         </div>
         <div className="col-span-7 flex flex-col justify-center">
           <h2 className="text-lg font-semibold">Title</h2>
-          <p className="text-gray-600">Price: 55$</p>
+          <div className="flex items-center gap-2">
+            <span className="text-gray-600">Price: </span>
+            <span className="text-gray-500 line-through">$70</span>
+            <span className="text-red-600 font-bold">$55</span>
+            <span className="ml-2 text-green-600 font-semibold bg-green-100 px-2 py-1 rounded text-xs">
+              21% OFF
+            </span>
+          </div>
           <p className="text-gray-500">
             Quantity:
             <button className="bg-red-600 w-4 mx-2 cursor-pointer text-white">
