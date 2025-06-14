@@ -1,82 +1,84 @@
-[
-  {
-    "id": "1",
-    "title": "Wireless Headphones",
-    "description": "High-quality wireless headphones with noise cancellation.",
-    "image": "https://cashflowinventory.com/blog/wp-content/uploads/2023/09/Product-Assortment-1024x1024.jpg",
-    "price": 99.99,
-    "discount": 10
-  },
-  {
-    "id": "2",
-    "title": "Smart Watch",
-    "description": "Water-resistant smart watch with fitness tracking features.",
-    "image": "https://cashflowinventory.com/blog/wp-content/uploads/2023/09/Product-Assortment-1024x1024.jpg",
-    "price": 149.99,
-    "discount": 15
-  },
-  {
-    "id": "3",
-    "title": "Bluetooth Speaker",
-    "description": "Portable Bluetooth speaker with deep bass and long battery life.",
-    "image": "https://cashflowinventory.com/blog/wp-content/uploads/2023/09/Product-Assortment-1024x1024.jpg",
-    "price": 59.99,
-    "discount": 5
-  },
-  {
-    "id": "4",
-    "title": "Gaming Mouse",
-    "description": "Ergonomic gaming mouse with customizable buttons.",
-    "image": "https://cashflowinventory.com/blog/wp-content/uploads/2023/09/Product-Assortment-1024x1024.jpg",
-    "price": 39.99,
-    "discount": 8
-  },
-  {
-    "id": "5",
-    "title": "Mechanical Keyboard",
-    "description": "RGB mechanical keyboard with blue switches.",
-    "image": "https://cashflowinventory.com/blog/wp-content/uploads/2023/09/Product-Assortment-1024x1024.jpg",
-    "price": 89.99,
-    "discount": 12
-  },
-  {
-    "id": "6",
-    "title": "4K Monitor",
-    "description": "Ultra HD 4K monitor with vibrant colors and fast refresh rate.",
-    "image": "https://cashflowinventory.com/blog/wp-content/uploads/2023/09/Product-Assortment-1024x1024.jpg",
-    "price": 299.99,
-    "discount": 20
-  },
-  {
-    "id": "7",
-    "title": "External SSD",
-    "description": "Portable external SSD with fast data transfer speeds.",
-    "image": "https://cashflowinventory.com/blog/wp-content/uploads/2023/09/Product-Assortment-1024x1024.jpg",
-    "price": 129.99,
-    "discount": 18
-  },
-  {
-    "id": "8",
-    "title": "Fitness Tracker",
-    "description": "Lightweight fitness tracker with heart rate monitor.",
-    "image": "https://cashflowinventory.com/blog/wp-content/uploads/2023/09/Product-Assortment-1024x1024.jpg",
-    "price": 49.99,
-    "discount": 7
-  },
-  {
-    "id": "9",
-    "title": "Wireless Charger",
-    "description": "Fast wireless charger compatible with most smartphones.",
-    "image": "https://cashflowinventory.com/blog/wp-content/uploads/2023/09/Product-Assortment-1024x1024.jpg",
-    "price": 29.99,
-    "discount": 6
-  },
-  {
-    "id": "10",
-    "title": "Action Camera",
-    "description": "Waterproof action camera with 4K recording capability.",
-    "image": "https://cashflowinventory.com/blog/wp-content/uploads/2023/09/Product-Assortment-1024x1024.jpg",
-    "price": 199.99,
-    "discount": 14
-  }
-]
+{
+  "products": [
+    {
+      "id": "1",
+      "title": "Wireless Headphones",
+      "description": "High-quality wireless headphones with noise cancellation. Enjoy immersive sound with deep bass and crisp highs, making every listening experience exceptional. The headphones feature a long-lasting battery life for all-day use, and a comfortable over-ear design that ensures you can wear them for hours without discomfort. Bluetooth connectivity allows for seamless pairing with your devices, while the built-in microphone enables hands-free calls. The headphones are foldable and portable, making them easy to carry wherever you go. They are compatible with most smartphones, tablets, and laptops. Fast charging support means you can quickly get back to your music. Available in multiple colors, these headphones are perfect for travel, work, or relaxation. Whether you are commuting, working out, or just relaxing at home, these headphones deliver outstanding performance and style.",
+      "image": "https://cashflowinventory.com/blog/wp-content/uploads/2023/09/Product-Assortment-1024x1024.jpg",
+      "price": 99.99,
+      "discount": 10
+    },
+    {
+      "id": "2",
+      "title": "Smart Watch",
+      "description": "Water-resistant smart watch with fitness tracking features. Track your steps, calories, and heart rate throughout the day to stay on top of your health goals. The watch offers customizable watch faces and notifications for calls, messages, and apps. Sleep monitoring and alarm functions help you maintain a healthy routine. With a lightweight and comfortable design, you can wear it all day and night. The smart watch is compatible with both iOS and Android devices, and features built-in GPS for outdoor activities. Long battery life with quick charging ensures you are always connected. Music control, weather updates, and more are available right on your wrist. The durable construction and stylish appearance make it suitable for any occasion, from workouts to business meetings.",
+      "image": "https://cashflowinventory.com/blog/wp-content/uploads/2023/09/Product-Assortment-1024x1024.jpg",
+      "price": 149.99,
+      "discount": 15
+    },
+    {
+      "id": "3",
+      "title": "Bluetooth Speaker",
+      "description": "Portable Bluetooth speaker with deep bass and long battery life. Enjoy crystal clear sound quality whether you are indoors or outdoors. The water-resistant design makes it perfect for pool parties, beach trips, or camping. Easy Bluetooth pairing allows you to connect to any device in seconds. The built-in microphone lets you take calls hands-free. Compact and lightweight, this speaker is easy to carry in your bag or backpack. The rechargeable battery provides up to 12 hours of playtime on a single charge. An aux input is available for wired connections, and LED indicators show battery and connectivity status. Available in several stylish colors, this speaker is a great companion for music lovers on the go.",
+      "image": "https://cashflowinventory.com/blog/wp-content/uploads/2023/09/Product-Assortment-1024x1024.jpg",
+      "price": 59.99,
+      "discount": 5
+    },
+    {
+      "id": "4",
+      "title": "Gaming Mouse",
+      "description": "Ergonomic gaming mouse with customizable buttons for ultimate control. The high-precision optical sensor ensures accuracy and responsiveness in every game. Adjustable DPI settings allow you to switch between different sensitivity levels on the fly. RGB lighting with multiple effects adds a stylish touch to your gaming setup. Durable switches are rated for millions of clicks, ensuring long-lasting performance. The comfortable grip is designed for extended gaming sessions, and programmable macros give you an edge in competitive play. The braided cable adds durability, and the mouse is compatible with both Windows and Mac systems. Lightweight design allows for fast movements and quick reactions, making it ideal for gamers of all levels.",
+      "image": "https://cashflowinventory.com/blog/wp-content/uploads/2023/09/Product-Assortment-1024x1024.jpg",
+      "price": 39.99,
+      "discount": 8
+    },
+    {
+      "id": "5",
+      "title": "Mechanical Keyboard",
+      "description": "RGB mechanical keyboard with blue switches for tactile feedback and precise typing. Customizable backlighting with multiple modes lets you personalize your workspace. The durable keycaps are designed for long-lasting use, and anti-ghosting with N-key rollover ensures every keystroke is registered. A detachable wrist rest provides comfort during long typing or gaming sessions. Programmable keys allow for shortcuts and macros, increasing your productivity. The sturdy aluminum frame adds durability and a premium feel. Compatible with both Windows and Mac, this keyboard is plug-and-play via USB connection. Whether you are gaming, working, or creating, this keyboard delivers performance and style.",
+      "image": "https://cashflowinventory.com/blog/wp-content/uploads/2023/09/Product-Assortment-1024x1024.jpg",
+      "price": 89.99,
+      "discount": 12
+    },
+    {
+      "id": "6",
+      "title": "4K Monitor",
+      "description": "Ultra HD 4K monitor with vibrant colors and a fast refresh rate for smooth visuals. Wide viewing angles provide better clarity from any position. The low blue light mode helps reduce eye strain during long hours of use. Multiple input ports, including HDMI and DisplayPort, offer flexible connectivity options. The adjustable stand allows for ergonomic setup, and slim bezels make it ideal for multi-monitor configurations. Built-in speakers provide convenient audio, and the energy-efficient design helps save power. Wall-mountable for flexible placement, this monitor is perfect for gaming, professional work, or entertainment. Experience stunning detail and color accuracy with every use.",
+      "image": "https://cashflowinventory.com/blog/wp-content/uploads/2023/09/Product-Assortment-1024x1024.jpg",
+      "price": 299.99,
+      "discount": 20
+    },
+    {
+      "id": "7",
+      "title": "External SSD",
+      "description": "Portable external SSD with fast data transfer speeds for quick backups and file transfers. The shock-resistant and durable build protects your data on the go. USB-C and USB-A compatibility ensures it works with a wide range of devices. Its compact size fits easily in your pocket or bag. Password protection keeps your files secure, and plug-and-play functionality means no drivers are needed. An LED indicator shows activity status. Compatible with Windows, Mac, and Linux, this SSD is ideal for students, professionals, and anyone needing reliable portable storage. Available in multiple storage capacities to suit your needs.",
+      "image": "https://cashflowinventory.com/blog/wp-content/uploads/2023/09/Product-Assortment-1024x1024.jpg",
+      "price": 129.99,
+      "discount": 18
+    },
+    {
+      "id": "8",
+      "title": "Fitness Tracker",
+      "description": "Lightweight fitness tracker with heart rate monitor to help you stay healthy and active. Track your steps, distance, and calories burned throughout the day. Sleep analysis and a silent alarm help you improve your rest. The water-resistant design is perfect for swimming and outdoor activities. Long battery life lasts up to 7 days on a single charge. Vibration alerts notify you of calls and messages. The easy-to-read OLED display shows your stats at a glance. Wireless syncing with your phone keeps your data up to date. Customizable bands and colors let you express your style. Compatible with popular health apps for comprehensive tracking.",
+      "image": "https://cashflowinventory.com/blog/wp-content/uploads/2023/09/Product-Assortment-1024x1024.jpg",
+      "price": 49.99,
+      "discount": 7
+    },
+    {
+      "id": "9",
+      "title": "Wireless Charger",
+      "description": "Fast wireless charger compatible with most smartphones for convenient charging. Qi-certified for safe and efficient power delivery. The non-slip surface keeps your phone securely in place while charging. An LED indicator shows the charging status at a glance. The compact and lightweight design makes it easy to use at home, in the office, or while traveling. Overcharge and temperature protection ensure your device stays safe. Works with cases up to 5mm thick, so you don't have to remove your case. Just place your phone on the pad and charging begins instantly. Available in black and white to match your style. Energy-efficient and reliable for everyday use.",
+      "image": "https://cashflowinventory.com/blog/wp-content/uploads/2023/09/Product-Assortment-1024x1024.jpg",
+      "price": 29.99,
+      "discount": 6
+    },
+    {
+      "id": "10",
+      "title": "Action Camera",
+      "description": "Waterproof action camera with 4K recording capability for capturing every adventure. The wide-angle lens delivers stunning shots and videos. Multiple mounting accessories are included for versatile use. Wi-Fi connectivity allows for easy sharing and remote control via your smartphone. The long battery life supports extended recording sessions. Enjoy slow-motion and time-lapse modes for creative filming. The touchscreen display makes it easy to navigate settings and preview footage. Supports microSD cards up to 128GB for ample storage. The lightweight and rugged design is built to withstand tough conditions. Perfect for sports, travel, and outdoor enthusiasts who want to capture every moment in high definition.",
+      "image": "https://cashflowinventory.com/blog/wp-content/uploads/2023/09/Product-Assortment-1024x1024.jpg",
+      "price": 199.99,
+      "discount": 14
+    }
+  ]
+}

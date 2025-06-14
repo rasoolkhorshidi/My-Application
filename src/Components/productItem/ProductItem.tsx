@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Button from "../button/Button";
 
-function ProductItem({ productId }: { productId: string }) {
+function ProductItem({ productId }: { productId: number }) {
   return (
     <div className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
       <img

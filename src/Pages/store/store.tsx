@@ -1,21 +1,31 @@
+import { useEffect, useState } from "react";
 import ProductItem from "../../Components/productItem/ProductItem";
+import { getAllProducts } from "../../services/api";
+
+// Define a type for your product
+type Product = {
+  id: number; // or number, depending on your data
+  // add other fields if needed
+};
 
 function Store() {
+  const [getedProduct, setGetedProduct] = useState<Product[]>([]);
+  useEffect(() => {
+    getAllProducts()
+      .then((products) => {
+        setGetedProduct(products);
+      })
+      .catch((error) => {
+        alert("Error fetching products:" + error);
+      });
+  }, []);
   return (
     <div>
       <h1 className="mt-5">Newest Product</h1>
-
       <div className="grid grid-cols-4 gap-4 mt-5 mx-3">
-        <ProductItem productId="1" />
-        <ProductItem productId="2" />
-        <ProductItem productId="3" />
-        <ProductItem productId="4" />
-        <ProductItem productId="5" />
-        <ProductItem productId="6" />
-        <ProductItem productId="7" />
-        <ProductItem productId="8" />
-        <ProductItem productId="9" />
-        <ProductItem productId="10" />
+        {getedProduct.map((product) => (
+          <ProductItem key={product.id} productId={product.id} />
+        ))}
       </div>
     </div>
   );
