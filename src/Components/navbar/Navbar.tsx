@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import Container from "../container/Container";
+import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function Navbar() {
   return (
     <div className="h-8 border-b-gray-400 shadow">
@@ -19,7 +21,7 @@ function Navbar() {
             </li>
             <li>
               <Link to="/cart" className="text-gray-700 hover:text-blue-500">
-                Cart
+                <FontAwesomeIcon icon={faCartPlus} />
               </Link>
             </li>
           </ul>
