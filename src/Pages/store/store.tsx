@@ -6,7 +6,7 @@ import type { TProduct } from "../../types/servers";
 function Store() {
   const [getedProduct, setGetedProduct] = useState<TProduct[]>([]);
   useEffect(() => {
-    getAllProducts()
+    getAllProducts("")
       .then((products) => {
         setGetedProduct(products);
       })
