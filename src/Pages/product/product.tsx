@@ -4,8 +4,15 @@ import Button from "../../Components/button/Button";
 import { getAllProducts } from "../../services/api";
 import { useState, useEffect } from "react";
 import type { TProduct } from "../../types/servers";
+import { useShopingCartContext } from "../../context/ShopingCartContext";
 
 function Product() {
+  const {
+    handleIncreaseProductQty,
+    handleDecreaseProductQty,
+    getProductQty,
+    handleRemoveProduct,
+  } = useShopingCartContext();
   const params = useParams<{ id: string }>();
   const [getedProduct, setGetedProduct] = useState<TProduct>({} as TProduct);
   useEffect(() => {
@@ -17,15 +24,57 @@ function Product() {
         alert("Error fetching products:" + error);
       });
   }, []);
-  console.log(getedProduct);
   return (
     <div>
       <Container>
         <div className="shadow-lg rounded-lg overflow-hidden mt-4 grid grid-cols-12 ">
           <div className="col-span-3 p-4">
             <img className="rounded" src={getedProduct.image} alt="" />
-            <Button variant="primary">Add To Cart</Button>
-            <Button variant="danger">Buy Now</Button>
+
+            {getProductQty(parseInt(params.id as string)) === 0 ? (
+              <>
+                <Button
+                  variant="primary"
+                  onClick={() => {
+                    handleIncreaseProductQty(parseInt(params.id as string));
+                  }}
+                >
+                  Add To Cart
+                </Button>
+              </>
+            ) : (
+              <>
+                <div className="grid grid-cols-3">
+                  <Button
+                    variant="danger"
+                    onClick={() => {
+                      handleDecreaseProductQty(parseInt(params.id as string));
+                    }}
+                  >
+                    -
+                  </Button>
+                  <span className="flex justify-center items-center pt-2.5">
+                    {getProductQty(parseInt(params.id as string))}
+                  </span>
+                  <Button
+                    variant="primary"
+                    onClick={() => {
+                      handleIncreaseProductQty(parseInt(params.id as string));
+                    }}
+                  >
+                    +
+                  </Button>
+                </div>
+                <Button
+                  variant="danger"
+                  onClick={() =>
+                    handleRemoveProduct(parseInt(params.id as string))
+                  }
+                >
+                  Remove
+                </Button>
+              </>
+            )}
           </div>
           <div className="col-span-9 p-4">
             <h1 className="text-2xl font-bold">{getedProduct.title}</h1>
@@ -46,10 +95,7 @@ function Product() {
                 </span>
               </p>
               <br />
-              <p>
-                Description: {getedProduct.description}
-
-              </p>
+              <p>Description: {getedProduct.description}</p>
             </div>
           </div>
         </div>

@@ -1,9 +1,9 @@
-import { useContext } from "react";
 import CartItem from "../../Components/cartItem/CartItem";
-import { ShopingCartContext } from "../../context/ShopingCartContext";
+import { useShopingCartContext } from "../../context/ShopingCartContext";
 
 function Cart() {
-  const {CartItems} = useContext(ShopingCartContext);
+  const {cartItems} = useShopingCartContext();
+  
   return (
     <div className="p-4 max-w-200 mx-auto">
       <h2 className="text-2xl font-bold mb-4">Your Cart</h2>
