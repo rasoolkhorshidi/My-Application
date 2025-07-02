@@ -5,6 +5,8 @@ import Navbar from "./Components/navbar/Navbar";
 import Product from "./Pages/product/product";
 import Cart from "./Pages/cart/cart";
 import { ShopingCartProvider } from "./context/ShopingCartContext";
+import PrivateRoute from "./Components/privateRoute/PrivateRoute";
+import Login from "./Pages/login/login";
 
 function App() {
   return (
@@ -14,9 +16,13 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/store" element={<Store />} />
         <Route path="/product/:id" element={<Product />} />
-        <Route path="/cart" element={<Cart />} />
+        <Route path="/login" element={<Login />} />
+
+        <Route element={<PrivateRoute />}>
+          <Route path="/cart" element={<Cart />} />
+        </Route>
       </Routes>
-   </ShopingCartProvider>
+    </ShopingCartProvider>
   );
 }
 
