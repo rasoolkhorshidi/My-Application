@@ -43,10 +43,10 @@ function CartItem({ id, qty }: TCartItem) {
             </span>
             <span className="text-red-600 font-bold">
               $
-              {Math.round(
+              {(
                 getedProduct.price -
                   (getedProduct.price * getedProduct.discount) / 100
-              )}
+              ).toFixed(2)}
             </span>
             <span className="ml-2 text-green-600 font-semibold bg-green-100 px-2 py-1 rounded text-xs">
               {getedProduct.discount}% OFF
