@@ -1,11 +1,11 @@
 import { createContext, useContext } from "react";
-import { useState } from "react";
+import { useLocalStorage } from "../../hooks/useLocalSorage";
 
 interface IShopingCartProvider {
   children: React.ReactNode;
 }
 
-interface ICartItem {
+export interface ICartItem {
   id: number;
   qty: number;
 }
@@ -16,6 +16,7 @@ interface IShopingCartContext {
   handleDecreaseProductQty: (id: number) => void;
   getProductQty: (id: number) => number;
   handleRemoveProduct: (id: number) => void;
+  cartQty: number;
 }
 
 export const ShopingCartContext = createContext({} as IShopingCartContext);
@@ -31,7 +32,10 @@ export const useShopingCartContext = () => {
 };
 
 export function ShopingCartProvider({ children }: IShopingCartProvider) {
-  const [cartItems, setCartItems] = useState<ICartItem[]>([]);
+  const [cartItems, setCartItems] = useLocalStorage<ICartItem[]>(
+    "cartItems",
+    []
+  );
 
   const handleIncreaseProductQty = (id: number) => {
     setCartItems((currentItems) => {
@@ -77,6 +81,7 @@ export function ShopingCartProvider({ children }: IShopingCartProvider) {
       return currentItem.filter((item) => item.id != id);
     });
   };
+  const cartQty = cartItems.reduce((total, current) => total + current.qty, 0);
   return (
     <ShopingCartContext.Provider
       value={{
@@ -85,6 +90,7 @@ export function ShopingCartProvider({ children }: IShopingCartProvider) {
         handleDecreaseProductQty,
         getProductQty,
         handleRemoveProduct,
+        cartQty,
       }}
     >
       {children}

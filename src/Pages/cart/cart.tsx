@@ -2,17 +2,14 @@ import CartItem from "../../Components/cartItem/CartItem";
 import { useShopingCartContext } from "../../context/ShopingCartContext";
 
 function Cart() {
-  const {cartItems} = useShopingCartContext();
-  
+  const { cartItems } = useShopingCartContext();
   return (
     <div className="p-4 max-w-200 mx-auto">
       <h2 className="text-2xl font-bold mb-4">Your Cart</h2>
       <div className="space-y-4">
-        <CartItem />
-        <CartItem />
-        <CartItem />
-        <CartItem />
-        <CartItem />
+        {cartItems.map((item) => (
+          <CartItem {...item} />
+        ))}
       </div>
       <div className="flex justify-between items-center p-4 bg-gray-100">
         <h2 className="text-xl font-semibold">Total Items: 5</h2>
